@@ -413,6 +413,14 @@
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="display-5 text-center mb-5">Get Details on Our Offerings!</h1>
+
+                                            <!-- Loading Spinner (Hidden by Default) -->
+                    <div id="loading-spinner" style="display: none; text-align: center;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
                         <!-- Start of Form -->
                         <form method="post" action="" name="contact-form">
                             <div class="row g-3">
@@ -430,7 +438,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-light border-0" placeholder="Message" id="message" style="height: 100px" name="Message" required></textarea>
+                                        <textarea class="form-control bg-light border-0"  id="message" placeholder="Message" name="Message" style="height: 100px"  required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>

@@ -3,18 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <title>Amplify ET - Giving Life To Your Brand</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -57,7 +59,7 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/sam.hailu.967"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
@@ -97,7 +99,7 @@
         <h1 class="display-3 text-white mb-4 animated slideInDown">Contact Us</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact</li>
             </ol>
         </nav>
@@ -114,32 +116,34 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">Contact Us</p>
                     <h1 class="display-5 mb-5">If You Have Any Questions, Please Contact Us</h1>
-                    <form method="post" action="" name="contact">
+                    <form method="post" action="" name="contact-form">
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" name="Name" id="name" placeholder="Name" required>
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control bg-light border-0" id="name" placeholder="name" name="Name" required>
+                                    <label for="name">Name</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" name="Email" id="email" placeholder="Email" required>
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control bg-light border-0" id="email" placeholder="Email" name="Email" required>
+                                    <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" name="Message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
+                                    <textarea class="form-control bg-light border-0" placeholder="Message" id="message" style="height: 100px" name="Message" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary py-3 px-4" type="submit">Submit</button>
                             </div>
                         </div>
                     </form>
-                                    </div>
+                    <!-- End of Form -->
+
+                </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">
                         <iframe class="position-relative w-100 h-100"
@@ -234,6 +238,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="sheet.js"></script>
+
 
 </body>
 

@@ -92,7 +92,7 @@
 
 <!-- Page Header Start -->
 <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="position: relative;">
-    <img src="img/3.png" alt="Contact Us Header" class="img-fluid position-absolute w-100 h-100" style="object-fit: cover; top: 0; left: 0; z-index: -1;">
+    <img src="img/ban9.png" alt="Contact Us Header" class="img-fluid position-absolute w-100 h-100" style="object-fit: cover; top: 0; left: 0; z-index: -1;">
     <div class="container text-center py-5">
         <h1 class="display-3 text-white mb-4 animated slideInDown">Contact Us</h1>
         <nav aria-label="breadcrumb animated slideInDown">
@@ -114,29 +114,23 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">Contact Us</p>
                     <h1 class="display-5 mb-5">If You Have Any Questions, Please Contact Us</h1>
-                    <form>
+                    <form method="post" action="" name="contact">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="Name" id="name" placeholder="Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" name="Email" id="email" placeholder="Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" name="Message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -145,7 +139,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                                    </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">
                         <iframe class="position-relative w-100 h-100"
@@ -240,6 +234,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

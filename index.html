@@ -116,9 +116,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
+                                    <!-- Replacing the typewriter effect with static text -->
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">
-                                        <span id="typewriter-text"></span>
-                                        <span id="typing-dash" style="font-stretch: 50%;">|</span>
+                                        Giving Life To Your Brand
                                     </h1>
                                     <a href="#service-section" class="btn btn-primary py-sm-3 px-sm-4">Discover Our Solutions</a>
                                 </div>
@@ -129,8 +129,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Carousel End -->
+</div>
+<!-- Carousel End -->
 
 
     <!-- Top Feature Start -->
@@ -784,54 +784,11 @@
     <script src="sheet.js"></script>
 
 
-
     <script>
-        const messages = [
-            "Giving Life To Your Brand",
-            "Delivering High Impact Results"
-        ];
-        let messageIndex = 0;
-        let charIndex = 0;
-        let typingDashVisible = true;
-        let typingComplete = false;
+        document.getElementById("typewriter-text").innerHTML = "Giving Life To Your Brand";
+    </script>
+
     
-        function typeText() {
-            if (typingComplete) return;
-            if (charIndex < messages[messageIndex].length) {
-                document.getElementById("typewriter-text").innerHTML += messages[messageIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeText, 120); // adjust the speed of typing here
-            } else {
-                if (messageIndex === 0) {
-                    // Move to the second message
-                    setTimeout(function() {
-                        document.getElementById("typewriter-text").innerHTML = "";
-                        charIndex = 0;
-                        messageIndex = 1;
-                        typeText();
-                    }, 1000); // adjust the delay before moving to the second message
-                } else {
-                    // Move back to the first message
-                    setTimeout(function() {
-                        document.getElementById("typewriter-text").innerHTML = "";
-                        charIndex = 0;
-                        messageIndex = 0;
-                        typeText();
-                    }, 1000); // adjust the delay before moving back to the first message
-                }
-            }
-        }
-    
-        function toggleTypingDash() {
-            const typingDashElement = document.getElementById("typing-dash");
-            typingDashElement.style.opacity = typingDashVisible ? 0 : 1;
-            typingDashVisible = !typingDashVisible;
-            setTimeout(toggleTypingDash, 400); // adjust the speed of the typing dash here
-        }
-    
-        typeText();
-        toggleTypingDash();
-    </script>    
     
 </body>
 

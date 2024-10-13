@@ -1,64 +1,38 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+    // Disable Spinner
     var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
+        if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+        }
     };
     spinner();
     
-    
-    // Initiate the wowjs
-    new WOW().init();
+    // Disable WOW.js (no animations)
+    // new WOW().init(); // Removed to stop animations
 
-
-    // Sticky Navbar
+    // Disable Sticky Navbar movement
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-        } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
-        }
+        $('.sticky-top').removeClass('shadow-sm').css('top', '0px');
     });
-    
-    
-    // Back to top button
+
+    // Disable Back to top button
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+        $('.back-to-top').hide();
     });
 
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
+    // Disable Facts counter
+    $('[data-toggle="counter-up"]').text(function () {
+        return $(this).attr('data-count'); // Set the static value based on the initial count
     });
 
-
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
+    // Disable Portfolio isotope and filter functionality
+    // No filtering behavior
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -74,6 +48,4 @@
         ]
     });
 
-    
 })(jQuery);
-
